@@ -27,5 +27,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="L20_arkitekttur_serialisering_mocking" />
   </component>
 </module>

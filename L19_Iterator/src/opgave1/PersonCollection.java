@@ -185,6 +185,6 @@ public class PersonCollection implements Iterable<opgave1.Person> {
         return persons;
     }
 
-    LocaleNameProvider
+   // LocaleNameProvider
 }
 
