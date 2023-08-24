@@ -10,5 +10,7 @@ public class Main {
         System.out.println("i have found peace");
 
         System.out.println("yeas");
+
+        System.out.println();
     }
 }
