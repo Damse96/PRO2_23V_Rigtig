@@ -8,5 +8,7 @@ public class Main {
         System.out.println("to Democracy anakin");
 
         System.out.println("i have found peace");
+
+        System.out.println("yeas");
     }
 }
