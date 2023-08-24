@@ -5,6 +5,8 @@ public class Main {
 
         System.out.println("behold i am become death, destroyer of worlds");
 
-        System.out.println( 2 + 2);
+        System.out.println("to Democracy anakin");
+
+        System.out.println("i have found peace");
     }
 }
