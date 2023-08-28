@@ -10,12 +10,17 @@ public class Main {
         Mekaniker mekaniker1 = new Mekaniker("Mikkel", "Madsvej 1", 2005,150,37);
         Mekaniker mekaniker2 = new Mekaniker("Sebastian", "Ceresvej 2", 2010,200,37);
         Mekaniker mekaniker3 = new Mekaniker("Thor", "Ceresvej 3", 2020,200,37);
+        Mekaniker synsmand1 = new Synsmand("Anders", "Gøteborg",2000,300,37,20);
+        Mekaniker synsmand2 = new Synsmand("Anders2", "Gøteborg",2000,300,37,30);
+
 
         mekanikers.add(mekaniker1);
         mekanikers.add(mekaniker2);
         mekanikers.add(mekaniker3);
         mekanikers.add(værkfører1);
         mekanikers.add(værkfører2);
+        mekanikers.add(synsmand1);
+        mekanikers.add(synsmand2);
         System.out.println(samletLoen(mekanikers));
     }
 
