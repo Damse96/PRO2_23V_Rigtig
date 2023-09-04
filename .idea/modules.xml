@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/L01_Git_opsaetning/L01_Git_opsaetning.iml" filepath="$PROJECT_DIR$/L01_Git_opsaetning/L01_Git_opsaetning.iml" />
       <module fileurl="file://$PROJECT_DIR$/L02_Specialisering_nedarvning_og_polymorfi_del_1/L02_Specialisering_nedarvning_og_polymorfi_del_1.iml" filepath="$PROJECT_DIR$/L02_Specialisering_nedarvning_og_polymorfi_del_1/L02_Specialisering_nedarvning_og_polymorfi_del_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L03_Abstrakte_Indkapsling/L03_Abstrakte_Indkapsling.iml" filepath="$PROJECT_DIR$/L03_Abstrakte_Indkapsling/L03_Abstrakte_Indkapsling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L04_Interfaces/L04_Interfaces.iml" filepath="$PROJECT_DIR$/L04_Interfaces/L04_Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRO2_23V_Rigtig.iml" filepath="$PROJECT_DIR$/PRO2_23V_Rigtig.iml" />
     </modules>
   </component>
