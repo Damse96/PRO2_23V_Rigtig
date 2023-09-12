@@ -7,6 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="sqljdbc4" level="application" />
+    <orderEntry type="library" exported="" name="javafx-sdk.17.0" level="application" />
+    <orderEntry type="library" exported="" name="mssql-jdbc-7.0.0.jre10" level="application" />
+    <orderEntry type="library" exported="" name="sqljdbc4" level="application" />
   </component>
 </module>
