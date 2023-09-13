@@ -1,4 +1,4 @@
-package Sql;
+package opgave4;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,9 +17,9 @@ public class SelectMedlemmer {
 			Statement stmt = minConnection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,
 					ResultSet.CONCUR_UPDATABLE);
 
-			ResultSet res = stmt.executeQuery("select * from Medlem");
+			ResultSet res = stmt.executeQuery("EXECUTE MedarbejderMobil");
 			while (res.next()) {
-				System.out.println(res.getString(1)+ "\t"  + res.getString(2) + " \t "  +res.getString(3) + res.getString(4) );
+				System.out.println(res.getString(1)+ "\t"  + res.getString(2));
 			}
 
 			if (res != null)

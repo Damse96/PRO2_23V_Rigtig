@@ -22,7 +22,7 @@ public class EksPreparedStatement {
 
 			Connection minConnection;
 			minConnection = DriverManager.getConnection(
-					"jdbc:sqlserver://ServerNavn\\SQLExpress;databaseName=KlubEks;user=sa;password=passWord;");
+					"jdbc:sqlserver://localhost\\databaseName=tidsregistrering;user=sa;password=someThingComplicated1234");
 
 			String sql = "insert into Medlem values(?,?,?) ";// preparedStatement
 			PreparedStatement prestmt = minConnection.prepareStatement(sql);
