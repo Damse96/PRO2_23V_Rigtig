@@ -1,4 +1,4 @@
-package src.controller;
+package controller;
 
 import model.Ingredient;
 

@@ -1,4 +1,4 @@
-package test.controller;
+package controller;
 
 import model.*;
 import org.junit.jupiter.api.*;

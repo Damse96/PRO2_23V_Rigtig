@@ -1,4 +1,4 @@
-package test.model;
+package model;
 
 import model.Ingredient.Unit;
 import org.junit.jupiter.api.*;
