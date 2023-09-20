@@ -1,0 +1,5 @@
+arrange forbered/opstil testdata
+
+act kald metoden der skal testes
+
+assert test påstande på returværdi/muteret objekt
