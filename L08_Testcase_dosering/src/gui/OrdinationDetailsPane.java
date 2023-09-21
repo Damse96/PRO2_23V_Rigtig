@@ -10,10 +10,10 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-import ordination.DagligSkaev;
-import ordination.Dosis;
-import ordination.Ordination;
-import ordination.PN;
+import pnOrdination.DagligSkaev;
+import pnOrdination.Dosis;
+import pnOrdination.Ordination;
+import pnOrdination.PN;
 
 public class OrdinationDetailsPane extends GridPane {
     private TextField txtStarttid, txtSluttid, txtLaegemiddel, txtDoegndosis,

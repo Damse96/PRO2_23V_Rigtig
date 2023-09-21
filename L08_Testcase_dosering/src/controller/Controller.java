@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-import ordination.*;
+import pnOrdination.*;
 import storage.Storage;
 
 public class Controller {
@@ -20,10 +20,6 @@ public class Controller {
 			controller = new Controller();
 		}
 		return controller;
-	}
-
-	public static Controller getTestController() {
-		return new Controller();
 	}
 
 	// Opretter og returnerer en PN ordination
@@ -123,9 +119,9 @@ public class Controller {
 		double vægt = patient.getVaegt();
 
 		// Definer de tre faktorer afhængig af patientens vægt
-		double letFaktor = 1;
-		double normalFaktor = 2;
-		double tungFaktor = 3;
+		double letFaktor = 0.1;
+		double normalFaktor = 0.2;
+		double tungFaktor = 0.3;
 
 		double enhedPrKgPrDoegn = 0;
 

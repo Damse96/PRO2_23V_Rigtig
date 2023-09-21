@@ -11,8 +11,8 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.paint.Color;
-import ordination.Laegemiddel;
-import ordination.Patient;
+import pnOrdination.Laegemiddel;
+import pnOrdination.Patient;
 
 public class OpretOrdinationPane extends GridPane {
 

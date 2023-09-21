@@ -7,7 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
-import ordination.Laegemiddel;
+import pnOrdination.Laegemiddel;
 
 public class StatistikPane extends GridPane {
 	private TextField ordinationerPerVægtPerLægemiddel = new TextField();

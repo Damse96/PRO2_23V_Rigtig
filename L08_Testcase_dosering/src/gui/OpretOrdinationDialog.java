@@ -16,8 +16,8 @@ import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import ordination.Laegemiddel;
-import ordination.Patient;
+import pnOrdination.Laegemiddel;
+import pnOrdination.Patient;
 
 public class OpretOrdinationDialog extends Stage {
 
