@@ -11,6 +11,23 @@ public class Opgave1DobbelArray {
 
         //TODO Tilføj kode der afprøver metoderne du programmerer i klassen DobbelArray til opgave 1
 
+
+        //opgave 1.1
+        System.out.println(da.getValueAt(values,2,3));
+
+
+        // opgave 1.2
+        da.setValueAt(values,1,1,5);
+
+
+        // opgave1.3
+        System.out.println(da.sumRow(values,1));
+
+        //opgave 1.4
+        System.out.println(da.sumCol(values,1));
+
+        //opgave 1.5
+        System.out.println(da.sum(values));
     }
 
 
