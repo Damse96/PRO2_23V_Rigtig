@@ -29,7 +29,7 @@ public class Opgave2DobbelArray {
         System.out.println();
         da.udskrivArray(values);
 
-        // Opgave 2.2  lav ændringer i values så der står 2 i lige rækker og 3 i ulige
+        // Opgave 2.2 lav ændringer i values så der står 2 i lige rækker og 3 i ulige
 
         for (int row = 0; row < values.length; row++) {
             for (int col = 0; col < values[row].length; col++) {
@@ -57,6 +57,8 @@ public class Opgave2DobbelArray {
                 }
             }
         }
+
+        
 
         System.out.println();
         System.out.println("Nedenfor skulle der stå 2 og 3 på hver anden søjle");

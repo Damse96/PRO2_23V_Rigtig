@@ -18,7 +18,9 @@ public class TheaterFloor {
 
 	public int buySeat(int row, int seat) {
 		// TODO
-		return -1;
+		int price = seats[row][seat];
+		seats[row][seat] = 0;
+		return price;
 	}
 
 	/**
@@ -38,5 +40,11 @@ public class TheaterFloor {
 
 	public void printTheaterFloor() {
 		// TODO
+		for (int[] ints : seats) { // Gennemløb alle rækker
+			for (int anInt : ints) { // Gennemløb alle pladser i rækken
+				System.out.print(anInt + " "); // Udskriv pladsen
+			}
+			System.out.println(); // Ny linje
+		}
 	}
 }
