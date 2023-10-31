@@ -14,7 +14,13 @@
       <module fileurl="file://$PROJECT_DIR$/L09_Arrays_I_flere_dimensioner/L09_Arrays_I_flere_dimensioner.iml" filepath="$PROJECT_DIR$/L09_Arrays_I_flere_dimensioner/L09_Arrays_I_flere_dimensioner.iml" />
       <module fileurl="file://$PROJECT_DIR$/L10_JavaCollections_Framework/L10_JavaCollections_Framework.iml" filepath="$PROJECT_DIR$/L10_JavaCollections_Framework/L10_JavaCollections_Framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/L11_LinkedLister/L11_LinkedLister.iml" filepath="$PROJECT_DIR$/L11_LinkedLister/L11_LinkedLister.iml" />
-      <module fileurl="file://$PROJECT_DIR$/L11_Processer_og_traade/L11_Processer_og_traade.iml" filepath="$PROJECT_DIR$/L11_Processer_og_traade/L11_Processer_og_traade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L11_Processer_og_traade_SQL/L11_Processer_og_traade_SQL.iml" filepath="$PROJECT_DIR$/L11_Processer_og_traade_SQL/L11_Processer_og_traade_SQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L12_Stacks/L12_Stacks.iml" filepath="$PROJECT_DIR$/L12_Stacks/L12_Stacks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13_Koer_og_cirkulaere_Lister/L13_Koer_og_cirkulaere_Lister.iml" filepath="$PROJECT_DIR$/L13_Koer_og_cirkulaere_Lister/L13_Koer_og_cirkulaere_Lister.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13_Monitor_Peterson_UdenSync_Semefor/L13_Monitor_Peterson_UdenSync_Semefor.iml" filepath="$PROJECT_DIR$/L13_Monitor_Peterson_UdenSync_Semefor/L13_Monitor_Peterson_UdenSync_Semefor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13_SQL_afleveringsopgave/L13_SQL_afleveringsopgave.iml" filepath="$PROJECT_DIR$/L13_SQL_afleveringsopgave/L13_SQL_afleveringsopgave.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L14_DeadLock_DAOS/L14_DeadLock_DAOS.iml" filepath="$PROJECT_DIR$/L14_DeadLock_DAOS/L14_DeadLock_DAOS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L14_Generics/L14_Generics.iml" filepath="$PROJECT_DIR$/L14_Generics/L14_Generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/L20_SQL_Projekt/L20_SQL_Projekt.iml" filepath="$PROJECT_DIR$/L20_SQL_Projekt/L20_SQL_Projekt.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRO2_23V_Rigtig.iml" filepath="$PROJECT_DIR$/PRO2_23V_Rigtig.iml" />
     </modules>

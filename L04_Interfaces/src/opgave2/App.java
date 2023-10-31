@@ -1,7 +1,5 @@
 package opgave2;
 
-import opgave1.Chili;
-
 import java.util.*;
 
 public class App {
