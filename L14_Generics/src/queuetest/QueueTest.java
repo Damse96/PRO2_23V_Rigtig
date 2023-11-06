@@ -13,20 +13,23 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import queue.SnackQueue;
-import snacks.Limb;
+import bryghus.Produkt;
+import bryghus.Salg;
+import queue.CircularArrayQueue;
+import queue.NodeQueue;
+import queue.QueueI;
 
 @TestMethodOrder(OrderAnnotation.class)
 class QueueTest
 {
-    private SnackQueue queue;
+    private QueueI queue;
 
-    private Limb limb1;
-    private Limb limb2;
-    private Limb limb3;
-    private Limb limb4;
-    private Limb limb5;
-    private Limb limb6;
+    private Salg salg1;
+    private Salg salg2;
+    private Salg salg3;
+    private Salg salg4;
+    private Salg salg5;
+    private Salg salg6;
 
     @BeforeEach
     void setUp() throws Exception
@@ -35,14 +38,32 @@ class QueueTest
         // ARRANGE
         // --------------------------------------------------
 
-        this.queue = new SnackQueue(5);
+        this.queue = new NodeQueue();
 
-        this.limb1 = new Limb(Limb.Types.Finger);
-        this.limb2 = new Limb(Limb.Types.Foot);
-        this.limb3 = new Limb(Limb.Types.Hand);
-        this.limb4 = new Limb(Limb.Types.Heel);
-        this.limb5 = new Limb(Limb.Types.Knee);
-        this.limb6 = new Limb(Limb.Types.Toe);
+        Produkt kloster = new Produkt("Klosterbryg");
+        Produkt sweet = new Produkt("Sweet Georgia Brown");
+        Produkt extra = new Produkt("Extra Pilsner");
+        Produkt classic = new Produkt("Classic Jazz");
+        Produkt klippekort10 = new Produkt("Klippekort 10 klip");
+        Produkt klippekort6 = new Produkt("Klippekort 6 klip");
+
+        this.salg1 = new Salg(1);
+        this.salg1.createSalgsLinje(kloster, 2, 40);
+
+        this.salg2 = new Salg(2);
+        this.salg2.createSalgsLinje(sweet, 3, 60);
+
+        this.salg3 = new Salg(3);
+        this.salg3.createSalgsLinje(extra, 2, 40);
+
+        this.salg4 = new Salg(4);
+        this.salg4.createSalgsLinje(classic, 3, 60);
+
+        this.salg5 = new Salg(5);
+        this.salg5.createSalgsLinje(klippekort10, 1, 160);
+
+        this.salg6 = new Salg(6);
+        this.salg6.createSalgsLinje(klippekort6, 2, 200);
     }
 
     @Test
@@ -53,30 +74,30 @@ class QueueTest
         // ACT & ASSERT
         // --------------------------------------------------
 
-        queue.enqueue(limb1);
-        queue.enqueue(limb2);
-        queue.enqueue(limb3);
-        queue.enqueue(limb4);
-        queue.enqueue(limb5);
-        queue.enqueue(limb6);
+        queue.enqueue(salg1);
+        queue.enqueue(salg2);
+        queue.enqueue(salg3);
+        queue.enqueue(salg4);
+        queue.enqueue(salg5);
+        queue.enqueue(salg6);
 
-        Limb meatToSmoke = (Limb) queue.dequeue();
-        assertEquals(limb1.getType(), meatToSmoke.getType());
+        Salg salgTilBehandling = (Salg) queue.dequeue();
+        assertEquals(salg1, salgTilBehandling);
 
-        meatToSmoke = (Limb) queue.dequeue();
-        assertEquals(limb2.getType(), meatToSmoke.getType());
+        salgTilBehandling = (Salg) queue.dequeue();
+        assertEquals(salg2, salgTilBehandling);
 
-        meatToSmoke = (Limb) queue.dequeue();
-        assertEquals(limb3.getType(), meatToSmoke.getType());
+        salgTilBehandling = (Salg) queue.dequeue();
+        assertEquals(salg3, salgTilBehandling);
 
-        meatToSmoke = (Limb) queue.dequeue();
-        assertEquals(limb4.getType(), meatToSmoke.getType());
+        salgTilBehandling = (Salg) queue.dequeue();
+        assertEquals(salg4, salgTilBehandling);
 
-        meatToSmoke = (Limb) queue.dequeue();
-        assertEquals(limb5.getType(), meatToSmoke.getType());
+        salgTilBehandling = (Salg) queue.dequeue();
+        assertEquals(salg5, salgTilBehandling);
 
-        meatToSmoke = (Limb) queue.dequeue();
-        assertEquals(limb6.getType(), meatToSmoke.getType());
+        salgTilBehandling = (Salg) queue.dequeue();
+        assertEquals(salg6, salgTilBehandling);
 
         assertThrows(NoSuchElementException.class, () -> {
             queue.dequeue();
@@ -93,22 +114,22 @@ class QueueTest
 
         assertEquals(0, queue.size());
 
-        queue.enqueue(limb1);
+        queue.enqueue(salg1);
         assertEquals(1, queue.size());
 
-        queue.enqueue(limb2);
+        queue.enqueue(salg2);
         assertEquals(2, queue.size());
 
-        queue.enqueue(limb3);
+        queue.enqueue(salg3);
         assertEquals(3, queue.size());
 
-        queue.enqueue(limb4);
+        queue.enqueue(salg4);
         assertEquals(4, queue.size());
 
-        queue.enqueue(limb5);
+        queue.enqueue(salg5);
         assertEquals(5, queue.size());
 
-        queue.enqueue(limb6);
+        queue.enqueue(salg6);
         assertEquals(6, queue.size());
 
         queue.dequeue();
@@ -140,13 +161,13 @@ class QueueTest
 
         assertTrue(queue.isEmpty());
 
-        queue.enqueue(limb1);
+        queue.enqueue(salg1);
         assertFalse(queue.isEmpty());
 
-        queue.enqueue(limb2);
+        queue.enqueue(salg2);
         assertFalse(queue.isEmpty());
 
-        queue.enqueue(limb3);
+        queue.enqueue(salg3);
         assertFalse(queue.isEmpty());
 
         queue.dequeue();
