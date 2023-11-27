@@ -40,27 +40,27 @@ public class Opgave3Loosning {
     private static void merge(ArrayList<Integer> list, int low, int middle, int high) {
         ArrayList<Integer> temp = new ArrayList<>();
 
-        int i = low;
-        int j = middle + 1;
+        int counter1 = low;
+        int counter2 = middle + 1;
 
-        while (i <= middle && j <= high) {
-            if (list.get(i) < list.get(j)) {
-                temp.add(list.get(i));
-                i++;
+        while (counter1 <= middle && counter2 <= high) {
+            if (list.get(counter1) < list.get(counter2)) {
+                temp.add(list.get(counter1));
+                counter1++;
             } else {
-                temp.add(list.get(j));
-                j++;
+                temp.add(list.get(counter2));
+                counter2++;
             }
         }
 
-        while (i <= middle) {
-            temp.add(list.get(i));
-            i++;
+        while (counter1 <= middle) {
+            temp.add(list.get(counter1));
+            counter1++;
         }
 
-        while (j <= high) {
-            temp.add(list.get(j));
-            j++;
+        while (counter2 <= high) {
+            temp.add(list.get(counter2));
+            counter2++;
         }
 
         for (int k = 0; k < temp.size(); k++) {
