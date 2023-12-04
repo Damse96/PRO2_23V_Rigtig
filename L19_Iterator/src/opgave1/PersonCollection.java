@@ -1,6 +1,11 @@
-package eksempel;
+package opgave1;
 
-public class PersonCollection {
+
+import java.util.Iterator;
+import java.util.Spliterator;
+import java.util.function.Consumer;
+
+public class PersonCollection implements Iterable<opgave1.Person> {
     // array to store the persons in;
     // persons have indices in [0, size-1]
     private Person[] persons;
@@ -138,9 +143,45 @@ public class PersonCollection {
         return sb.toString();
     }
 
+    @Override
+    public Iterator<opgave1.Person> iterator() {
+        String name = null;
+        return new PersonIterator(this.persons);
+    }
+
+    @Override
+    public void forEach(Consumer<? super opgave1.Person> action) {
+        Iterable.super.forEach(action);
+    }
+
+    @Override
+    public Spliterator<opgave1.Person> spliterator() {
+        return Iterable.super.spliterator();
+    }
+
     // -------------------------------------------------------------------------
     // Ex. 2
 
-    // TODO
+    public static void main(String[] args) {
+        PersonCollection persons = new PersonCollection();
 
+        Person p1 = new Person("Hans");
+        Person p2 = new Person("Viggo");
+        persons.add(p1);
+        persons.add(p2);
+        System.out.println(persons);
+
+        PersonIterator iterator = new PersonIterator(persons.getPersons());
+        System.out.println(iterator.hasNext());
+        while (iterator.hasNext()) {
+            Person p = iterator.next();
+            System.out.println(persons);
+        }
+        System.out.println(iterator.hasNext());
+    }
+
+    public Person[] getPersons() {
+        return persons;
+    }
 }
+
