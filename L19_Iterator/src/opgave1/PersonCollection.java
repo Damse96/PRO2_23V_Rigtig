@@ -4,6 +4,7 @@ package opgave1;
 import java.util.Iterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
+import java.util.spi.LocaleNameProvider;
 
 public class PersonCollection implements Iterable<opgave1.Person> {
     // array to store the persons in;
@@ -183,5 +184,7 @@ public class PersonCollection implements Iterable<opgave1.Person> {
     public Person[] getPersons() {
         return persons;
     }
+
+    LocaleNameProvider
 }
 
