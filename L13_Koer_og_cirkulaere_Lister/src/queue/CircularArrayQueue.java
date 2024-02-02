@@ -15,7 +15,7 @@ public class CircularArrayQueue implements QueueI
     /**
      * Constructs an empty queue.
      */
-    public CircularArrayQueue(int size)
+    public Circular ArrayQueue(int size)
     {
         elements = new Object[size];
         currentSize = 0;

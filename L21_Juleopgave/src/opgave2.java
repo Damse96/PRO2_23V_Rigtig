@@ -27,11 +27,6 @@ public class opgave2 {
         return antalØl;
     }
 
-    1142,85714 (6)
-    164
-    23,4285714 (3)
-    3 (5)
-    1 (1)
 
 
 

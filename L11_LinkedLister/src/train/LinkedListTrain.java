@@ -1,20 +1,14 @@
 package train;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class LinkedListTrain
 {
-    protected WagonNode firstWagon;
-    private  int counter;
-
-
+    private WagonNode firstWagon;
 
     /**
      * Constructs an empty linked list train.
      */
-
     public LinkedListTrain()
     {
         this.firstWagon = null;
@@ -44,16 +38,8 @@ public class LinkedListTrain
     public void addFirst(WagonNode wagon)
     {
         // TODO: Assignment 1: Implement this add method...
-        if(this.firstWagon == null){
-            this.firstWagon = wagon;
-            if(wagon.getPreviousWagon() == null){
 
-            }
-        }else {
-            wagon.setNextWagon(this.firstWagon);
-            firstWagon = wagon;
-        }
-        counter++;
+        throw new UnsupportedOperationException("Not implemented");
     }
 
     /**
@@ -65,17 +51,9 @@ public class LinkedListTrain
      */
     public WagonNode removeFirst()
     {
-        WagonNode remove = null;
-        if(firstWagon == null) {
-            throw new NoSuchElementException();
-        }else {
-            remove = this.firstWagon;
-            firstWagon = remove.getNextWagon();
-            counter--;
-        }
-        ArrayList<String> arrayList = new ArrayList<>();
-        return remove;
+        // TODO: Assignment 2: Implement this remove method...
 
+        throw new UnsupportedOperationException("Not implemented");
     }
 
     /**
@@ -86,13 +64,8 @@ public class LinkedListTrain
     public int count()
     {
         // TODO: Assignment 3: Implement this count method...
-//        WagonNode holdWagon = firstWagon;
-//        int sum = 0;
-//        while (holdWagon != null){
-//            sum++;
-//           holdWagon = holdWagon.getNextWagon();
-//        }
-        return this.counter;
+
+        throw new UnsupportedOperationException("Not implemented");
     }
 
     /**
@@ -104,20 +77,9 @@ public class LinkedListTrain
      */
     public boolean remove(WagonNode wagon)
     {
-        WagonNode current = firstWagon;
-        WagonNode previous = null;
+        // TODO: Assignment 4: Implement this remove method...
 
-        while (current != null) {
-            if (current == wagon) {
-                previous.setNextWagon(current.getNextWagon());
-                wagon.setNextWagon(null);
-                return true;
-            }
-            previous = current;
-            current = current.getNextWagon();
-        }
-        return false;
-        // TODO: Assignment 4: Implement this remove method..
+        throw new UnsupportedOperationException("Not implemented");
     }
 
     /**
@@ -128,19 +90,8 @@ public class LinkedListTrain
      */
     public void insertAt(WagonNode wagon, int position)
     {
-        WagonNode current = firstWagon;
-        WagonNode previous = null;
-        int count = 0;
+        // TODO: Assignment 5: Implement this insert method...
 
-            while (current != null) {
-                if (count == position) {
-                    previous.setNextWagon(wagon);
-                    wagon.setNextWagon(current);
-                }
-                previous = current;
-                current = current.getNextWagon();
-                count++;
-            }
-
+        throw new UnsupportedOperationException("Not implemented");
     }
 }
